@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="main-doc">
+  <!-- <div class="NAV"> -->
+  <!-- <div id="navbardiv"> -->
+  <nav id="navbar">
+    <header id="one">R DOCUMENTATION</header>
+    <ul id="ul">
+      <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+      <li><a class="nav-link" href="#What_is_R_Programming?">What is R Programming?</a></li>
+
+      <li><a class="nav-link" href="#R_and_Rust">R and Rust
+        </a></li>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Taking_Input_from_User_in_R_Programming">Taking Input from User in R
+          Programming</a></li>
+      <li><a class="nav-link" href="#Control_Statements_in_R_Programming">Control Statements in R Programming</a></li>
+      <li><a class="nav-link" href="#Functions_in_R_Programming">Functions in R Programming</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="BODY-DIV"> -->
+  <div id="bodyid"> 
+    <main id="main-doc">
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <p>This guide assumes you have the following basic background:</p>
+        <ul id="unorder">
+          <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+          <li>Good working knowledge of HyperText Markup Language (HTML).
+          </li>
+          <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main
+            page
+            about JavaScript.</li>
+        </ul>
+      </section>
+      <p>Take the rest of the info from
+        <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+      </p>
+      <section class="main-section" id="What_is_R_Programming?">
+        <header>What is R Programming?</header>
+        <p>R is a programming language and also a software environment for statistical computing and data analysis. R
+          was
+          developed by Ross Ihaka and Robert Gentleman at the university of Auckland, New Zealand. R is an open-source
+          programming language and it is available on widely used platforms e.g. Windows, Linux, and Mac. It generally
+          comes with a command-line interface and provides a vast list of packages for performing tasks. R is an
+          interpreted language that supports both procedural programming and object-oriented programming.</p>
+      </section>
+      <p>Take the rest of the info from
+        <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+      </p>
+      <section class="main-section" id="R_and_Rust">
+        <header>R and Rust</header>
+        <p>R and Rust serve different purposes in the programming world. R is a language designed for statistical
+          computing and graphics, widely used among statisticians and data analysts. Rust, on the other hand, is a
+          systems
+          programming language that aims to provide memory safety, concurrency, and performance.</p>
+      </section>
+      <p>Take the rest of the info from
+        <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+      </p>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>R is the most popular language used for Statistical Computing and Data Analysis with the support of over 10,
+          000+ free packages in CRAN repository. Like any other programming language, R has a specific syntax which is
+          important to understand if you want to make use of its powerful features. This article assumes R is already
+          installed on your machine. We will be using RStudio but we can also use R command prompt by typing the
+          following
+          command in the command line.</p>
+        <ul>
+          <li>$ R</li>
+          <p>This will launch the interpreter and now let’s write a basic Hello World program to get started.
+          <p>
+          <div class="img-li"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200414233953/first14.png">
+          </div>
+          <br>
+          <code>
+# R program to illustrate <br>
+# printing output of an R program <br>
+# print string<br>
+print("GFG")<br>
+# print variable<br>
+# it will print 'GeeksforGeeks' on the console<br>
+x - "GeeksforGeeks"<br>
+print(x) <br></code>
+          <p>We can see that “Hello, World!” is being printed on the console. Now we can do the same thing using print()
+            which prints to the console. Usually, we will write our code inside scripts which are called RScripts in R.
+            To
+            create one, write the below given code in a file and save it as myFile.R and then run it in console by
+            writing:</p>
+          <li>Rscript myFile.R</li>
+          <br>
+          <div class="img-li"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200414234906/223-1.png">
+          </div>
+          <br>
+          <code>print("HelloWorld")</code>
+          <br>
+          <br>
+          <li>[1] "Hello, World!"</li>
+          <p>Take the rest of the info from
+            <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+          </p>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>A variable is a memory allocated for the storage of specific data and the name associated with the variable
+          is
+          used to work around this reserved block. The name given to a variable is known as its variable name. Usually a
+          single variable stores only the data belonging to a certain data type. The name is so given to them because
+          when
+          the program executes there is subject to change hence it varies from time to time.</p>
+        <code># R program to illustrate<nr>
+# Initialization of variables<br>
+
+# using equal to operator<br>
+var1 = "hello"<br>
+print(var1)<br>
+
+# using leftward operator<br>
+var2 <- "hello"<br>
+print(var2)<br>
+
+# using rightward operator<br>
+"hello" -> var3<br>
+print(var3)<br>
+</code>
+        <br>
+        <p>Take the rest of the info from
+          <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+        </p>
+      </section>
+      <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables
+        </header>
+        <p>R Programming Language is a dynamically typed language, i.e. the R Language Variables are not declared with a
+          data type rather they take the data type of the R-object assigned to them. This feature is also shown in
+          languages like Python and PHP</p>
+        <ul>
+          <li>Using equal to operators
+            variable_name = value</li>
+          <li>using leftward operator
+            variable_name {-- value</li>
+          <li>using rightward operator
+            value -> variable_name</li>
+          <br>
+          <code># R program to demonstrate 
+# variable assignment <br>
+
+# Assignment using equal operator<br>
+var1 = c(0, 1, 2, 3)<br>
+print(var1)<br>
+
+# Assignment using leftward operator<br>
+var2 <- c("Python", "R")<br>
+print(var2)<br>
+
+# A Vector Assignment<br>
+a = c(1, 2, 3, 4)<br>
+print(a)<br>
+b = c("Debi", "Sandeep", "Subham", "Shiba")<br>
+print(b)<br>
+
+# A group of vectors Assignment using list<br>
+c = list(a, b)<br>
+print(c)<br>
+</code>
+          <br>
+          <p>Take the rest of the info from
+            <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+          </p>
+      </section>
+      <section class="main-content" id="Taking_Input_from_User_in_R_Programming">
+        <header>
+          Taking Input from User in R Programming
+        </header>
+        <p>In R language readline() method takes input in string format. If one inputs an integer then it is inputted as
+          a
+          string, lets say, one wants to input 255, then it will input as “255”, like a string. So one needs to convert
+          that inputted value to the format that he needs. In this case, string “255” is converted to integer 255. To
+          convert the inputted value to the desired data type, there are some functions in R, </p>
+        <p>Take the rest of the info from
+          <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+        </p>
+      </section>
+
+      <section class="main-content" id="Control_Statements_in_R_Programming">
+        <header>
+          Control Statements in R Programming
+        </header>
+        <p>Control statements are expressions used to control the execution and flow of the program based on the
+          conditions provided in the statements. These structures are used to make a decision after assessing the
+          variable. In this article, we’ll discuss all the control statements with the examples.</p>
+        <ul>
+          <li>if condition</li>
+          <li>if-else condition</li>
+          <li>for loop</li>
+          <li>nested loops</li>
+          <li>while loop</li>
+          <li>repeat and break statement</li>
+          <li>return statement</li>
+          <li>next statement</li>
+        </ul>
+        <code>x - 100<br>
+<br>
+if(x > 10){ <br>
+print(paste(x, "is greater than 10"))}<br>
+</code>
+        <br>
+        <p>Take the rest of the info from
+          <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+        </p>
+      </section>
+
+      <section class="main-content" id="Functions_in_R_Programming">
+        <header>
+          Functions in R Programming
+        </header>
+        <p>Functions are useful when you want to perform a certain task multiple times. A function accepts input
+          arguments
+          and produces the output by executing valid R commands that are inside the function. In R Programming Language
+          when you are creating a function the function name and the file in which you are creating the function need
+          not
+          be the same and you can have one or more functions in R.</p>
+        <p>Take the rest of the info from
+          <span><a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">Here</a> (GEEKS FOR GEEKS)</span>
+        </p>
+        <code></code>
+      </section>
+
+    <section class="main-content" id="Reference">
+      <header>Reference</header>
+      <p>All the material is from <a href="https://www.geeksforgeeks.org/r-tutorial/?ref=outind">GEEKS FOR GEEKS</a>
+    </main>
+
+</body>
+</div>
+<!-- </div> -->
+
+</html>
